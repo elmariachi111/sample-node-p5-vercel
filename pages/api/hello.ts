@@ -13,7 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   try {
     browser = await puppeteer.launch({
       product: 'firefox',
-      executablePath: '/opt/firefox/firefox',
+      executablePath: '/usr/bin/firefox',
       ignoreHTTPSErrors: true,
       headless: true,
       extraPrefsFirefox: {
